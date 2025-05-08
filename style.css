@@ -1,0 +1,114 @@
+ header{
+  padding: 2rem;  
+ }
+ .header{
+    top: 0px;
+    left: 0px;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    position: fixed;
+    justify-content: space-between;
+    background-color: rgb(255, 255, 255);
+    
+ }
+ .header .naviconbar a{
+    font-size: 1rem;
+    margin: 0 1rem;
+    color: black;
+ }
+ *{
+    font-family: poppins, sans-serif;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    margin: 0px;
+    outline: 0px;
+    text-decoration: none;
+    color:black ;
+ }
+
+ .header .naviconbar a:hover{
+ color: orange;
+ }
+ section{
+    z-index: 50;
+    text-align: center;
+    background-image: url();
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding: 2rem;
+ }
+ .home{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    background: url(food.avif) no-repeat ;
+    background-position: center;
+    background-size: cover;
+    padding-top: 17rem;
+    padding-bottom: 10rem;
+}
+.home .content h3{
+    color: black;
+    font-size: 3rem;
+}
+
+.home .content p{
+    color: rgb(173, 162, 162);
+    font-size: 1.4rem;
+    padding: 1rem ;
+    line-height: 1.8;
+}
+.home .content span{
+    color: orange;
+}
+.home .content button{
+    background-color: transparent;
+    color: black;
+    padding: 0.6rem;
+}
+ .home .content button:hover{
+    background-color: orange;
+ }
+ .features .box-container{
+    display: grid;
+    grid-template-columns: repeat(autofit, minimax(30rem, 1fr));
+    gap: 1.5rem;
+ }
+ .features .heading span{
+    color: orange;
+ }
+ .features .box-container .box{
+    padding: 3rem 2rem;
+    background: white;
+    outline-color: rgba(0, 0, 0, 0.1) ;
+    outline-style: double;
+    outline-width: 0.1rem;
+    outline-offset: -1rem;
+    text-align: center;
+ }
+ .features .box-container .box img{
+    margin: 1rem 0;
+    height: 15rem;
+ }
+ .features .box-container .box h3{
+    font-size: 2.2rem;
+    line-height: 1.6;
+    color: black;
+ }
+ .features .box-container .box p{
+    font-size: 1rem;
+    line-height: 1.8;
+    color: rgb(190, 194, 194);
+    padding: 1rem 0;
+ }
+ .features .box-container .box button{
+    background-color: transparent;
+    border-radius: solid;
+}
+.features .box-container .box button:hover{
+    background-color: orange;
+}
+.features .box-container .box:hover{
+    outline: solid;
+}
