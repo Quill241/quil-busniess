@@ -2,12 +2,10 @@
   padding: 2rem;  
  }
  .header{
-    top: 0px;
-    left: 0px;
     z-index: 1000;
     display: flex;
     align-items: center;
-    position: fixed;
+    width: 100%;
     justify-content: space-between;
     background-color: rgb(255, 255, 255);
     
@@ -71,9 +69,10 @@
     background-color: orange;
  }
  .features .box-container{
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(autofit, minimax(30rem, 1fr));
     gap: 1.5rem;
+    box-shadow: 0 4px 8px rgb(0, 0, 0.1);
  }
  .features .heading span{
     color: orange;
@@ -89,16 +88,17 @@
  }
  .features .box-container .box img{
     margin: 1rem 0;
-    height: 15rem;
+    width: 100px;
+    height: auto;
  }
  .features .box-container .box h3{
-    font-size: 2.2rem;
+    font-size: 1.25rem;
     line-height: 1.6;
     color: black;
  }
  .features .box-container .box p{
-    font-size: 1rem;
-    line-height: 1.8;
+    font-size: 10px;
+    line-height:1.2rem;
     color: rgb(190, 194, 194);
     padding: 1rem 0;
  }
