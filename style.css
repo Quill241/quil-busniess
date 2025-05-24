@@ -1,7 +1,30 @@
- header{
-  padding: 2rem;  
+*{
+   font-family: poppins, sans-serif;
+   box-sizing: border-box;
+   text-transform: capitalize;
+   margin: 0px;
+   outline: 0px;
+   text-decoration: none;
+   color:black ;
+}
+.heading{
+   text-align: center;
+   padding: 2rem 0;
+   padding-bottom: 2rem;
+   color: black;
+}
+
+.heading span{
+   background-color: orange;
+   color: white;
+   display: inline-block;
+
+}
+header{
+  padding: 1rem;  
  }
  .header{
+   position: fixed;
     z-index: 1000;
     display: flex;
     align-items: center;
@@ -10,24 +33,57 @@
     background-color: rgb(255, 255, 255);
     
  }
+
+ .header .fa-shopping-basket{
+   color: orange;
+   font-size: 1.7rem;
+   margin-left: 40px;
+ }
+ .header  h1{
+   margin-right: 519px;
+ }
  .header .naviconbar a{
     font-size: 1rem;
-    margin: 0 1rem;
     color: black;
+     height: 4.5rem;
+   line-height: 4rem;
+   border-radius: 0.5rem;
+   background: white;
+   font-size: 1rem;
+   margin-left: 1rem;
+   cursor: pointer;
+   text-align: center;
  }
- *{
-    font-family: poppins, sans-serif;
-    box-sizing: border-box;
-    text-transform: capitalize;
-    margin: 0px;
-    outline: 0px;
-    text-decoration: none;
-    color:black ;
- }
+
 
  .header .naviconbar a:hover{
  color: orange;
  }
+
+
+ .header .icons div:hover{
+   background: orange;
+   color: white;
+ }
+ .btn{
+   margin-top: 1rem;
+   display: inline-block;
+   padding: 0 0.9rem;
+   font-size: 1.2rem;
+   width: 12rem;
+   text-align: center;
+   border-radius: 0.2rem;
+   border: 0.1rem solid black;
+   color:black;
+   cursor: pointer;
+   background: none;
+ }
+
+ .btn:hover{
+ background: orange;
+ }
+
+
  section{
     z-index: 50;
     text-align: center;
@@ -60,14 +116,8 @@
 .home .content span{
     color: orange;
 }
-.home .content button{
-    background-color: transparent;
-    color: black;
-    padding: 0.6rem;
-}
- .home .content button:hover{
-    background-color: orange;
- }
+
+
  .features .box-container{
    display: grid;
    grid-template-columns: 1fr 1fr 1fr;
@@ -104,15 +154,7 @@
     color: rgb(190, 194, 194);
     padding: 1rem 0;
  }
- .features .box-container .box button{
-    background-color: transparent;
-    border-radius: solid;
-}
-
-.features .box-container .box button:hover{
-    background-color: orange;
-}
-
+ 
 .features .box-container .box:hover{
     outline: solid;
 }
@@ -174,6 +216,14 @@ section{
       background-color: orange;
    }
 
+    .box .stars .fa-star-half-alt{
+      color: orange;
+   }
+
+   .box .stars .fa-star{
+      color:orange;
+   }
+
    section#categories .box-container{
       width: 100%;
       padding: 0.8rem 1.2rem;
@@ -211,31 +261,6 @@ section{
       display: inline-block;
       }
 
-      section#categories .box-container .box button{
-         height: 30px;
-      }
-
-      section#categories .box-container .box button:hover{
-         background-color: orange;
-      }
-
-      section > h1{ 
-         text-align: center;
-         color: black;
-         font-size: ;
-      }
-   
-      section > button{
-         width: 200px;
-         height: 30px;
-         margin: 20px;
-         background-color: transparent;
-         font-size:20px;
-      }
-
-      section  > button:hover{
-         background-color: orange;
-      }
       
       section#review .box-container{
          width: 100%;
@@ -305,9 +330,9 @@ section{
          }
       
          section#blogs .box-container .box img{
-            width: 100%;
-            height: 65%;
-            padding: 2rem 4rem;
+            margin: 1rem 0;
+            width: 100px;
+            height: 200px
          }
       
          section#blogs.box-container .box:hover{
@@ -322,14 +347,14 @@ section{
             display: inline-block;
             }
       
-            section#blogs .box-container .box button{
+            section#blogs .box-container .box .btn{
                height: 30px;
                background: transparent;
                outline: 2px;
                color: rgb(19, 19, 56);
             }
       
-            section#blogs .box-container .box button:hover{
+            section#blogs .box-container .box .btn:hover{
                background-color: orange;
             }
 
@@ -341,8 +366,118 @@ section{
             section#blogs .box-container .box span{
                margin-left: 70px;
             }
-      
 
+            section#blogs .content .icons .fa-user{
+               color: orange;
+            }
+
+            section#blogs .content .icons .fa-calendar{
+               color: orange;
+               margin-left: 35px;
+            }
+            
+            section#blogs .content h3{
+               margin-top: 20px;
+            }
+
+            section#blogs .content p{
+               margin-top: 15px;
+            }
+
+
+            .footer {
+            background: white;
+               }
+
+           .footer .box-container {
+            display: grid;
+             grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+            gap: 1.5rem;
+            }
+
+            .footer .box-container .box h3 {
+            font-size: 2rem;
+                color: rgb(104, 102, 102);
+            padding: 1rem 0;
+            }
+
+
+         .footer .box-container .box h3 i {
+         color: orange;
+         }
+
+
+         .footer .box-container .box .links {
+         display: block;
+         font-size: 1.3rem;
+         color: rgb(83, 81, 81);
+         padding: 1rem 0;
+         }
+
+.footer .box-container .box .links i {
+    color: orange;
+    padding-right: 0.5rem;
+}
+
+.footer .box-container .box .links:hover i {
+    padding-right: 2rem;
+
+}
+
+.footer .box-container .box p {
+    line-height: 1.8;
+    font-size: 1.3rem;
+    color: rgb(104, 102, 102);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .share a{
+    height: 4rem;
+    width: 4rem;
+    line-height: 4rem;
+    border-radius: 0.5rem;
+    font-size: 1.3rem;
+    color: black;
+    margin-left: 0.2rem;
+    background: white;
+    text-align: center;
+
+color: rgb(104, 102, 102);
+}
+
+.footer .box-container .box .share a:hover{
+    background: orange;
+    color: white;
+}
+
+
+.footer .box-container .box .email{
+    width: 100%;
+    margin: 0.7rem 0;
+    padding: 1rem;
+    border-radius: 0.5rem;
+    background:white;
+    font-size: 1.3rem;
+    color: rgb(34, 30, 30);
+}
+
+.footer .box-container .box .img{
+    margin-top: 2rem;
+    height: 3rem;
+}
+
+.footer .credit{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 1.7rem;
+    color: black;;
+}
+
+.footer .credit span{
+    color: orange;
+}
 
 
 
